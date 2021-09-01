@@ -87,9 +87,9 @@ export default function SearchAppBar() {
   useEffect(() => {
     const loader=async ()=>{
     if (text){
-        console.log(text)
-        const result= await axios.get(`http://hn.algolia.com/api/v1/search?query=${text}`)
-      console.log(data)
+   
+        const result= await axios.get(`https://hn.algolia.com/api/v1/search?query=${text}`)
+     
         setdata(result.data.hits)
     }    
     
